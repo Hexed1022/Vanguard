@@ -7,16 +7,16 @@ if not getgenv() then
 	end
 end
 local games = {
-  [17219742] = 'https://ryk.bloxteam.com/anime_vanguards.lua',
+  [17219742] = 'raw.githubusercontent.com/Hexed1022/Hexed2.lua/main/Hexed2.lua',
 }
 if games[game.CreatorId] then
 	task.wait(1)
 	print(getgenv().ryk_loaded)
 	if getgenv().ryk_loaded == true then return end
 	getgenv().ryk_loaded = true
-	print("RYK HUB | Successfully loaded the game.")
+	print("Vanguard loaded correctly.")
 	loadstring(game:HttpGet(games[game.CreatorId]))()
 else
 	getgenv().ryk_loaded = true
-	warn('RYK HUB | Game not supported. Please join discord.gg/ryk for support.')
+	warn('Script is not compatible with this game.')
 end
