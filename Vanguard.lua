@@ -11,9 +11,9 @@ local games = {
 }
 if games[game.CreatorId] then
 	task.wait(1)
-	print(getgenv().ryk_loaded)
-	if getgenv().ryk_loaded == true then return end
-	getgenv().ryk_loaded = true
+	print(getgenv().Vamguard_loaded)
+	if getgenv().Vanguard_loaded == true then return end
+	getgenv().Vanguard_loaded = true
 	print("Vanguard loaded correctly.")
 	loadstring(game:HttpGet(games[game.CreatorId]))()
 else
