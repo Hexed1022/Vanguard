@@ -7,7 +7,7 @@ if not getgenv() then
 	end
 end
 local games = {
-  [17219742] = 'https://raw.githubusercontent.com/Hexed1022/VanguardEx/main/VanguardEx.lua',
+  [17219742] = 'raw.githubusercontent.com/Hexed1022/VanguardEx/main/VanguardEx.lua',
 }
 if games[game.CreatorId] then
 	task.wait(1)
